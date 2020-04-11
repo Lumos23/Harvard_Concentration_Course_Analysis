@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Classes
+{% endblock %}
+
+{% block main %}
+    <form action="/classes" method="post">
+        <div class="form-group">
+            {% for n in range(1, number+1) %}
+            <select class="form-control" name="subject{{n}}">
+                <option disabled selected values>Course {{n}}</option>
+                {% for title in titles %}
+                    <option>{{title["title"]}}</option>
+                {% endfor %}
+            </select>
+            <br><br>
+            {% endfor %}
+        <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+    </form>
+    <h4 class=title><a href="https://courses.my.harvard.edu/psp/courses/EMPLOYEE/EMPL/h/?tab=HU_CLASS_SEARCH"  target="_blank">Look up the titles of your classes?</a></h4>
+{% endblock %}

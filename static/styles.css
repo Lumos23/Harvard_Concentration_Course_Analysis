@@ -1,0 +1,90 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+/* colors for brand */
+nav .navbar-brand .blue
+{
+    color: #c90016;
+    font-family: 'Merriweather Light', 'Times New Roman', serif;
+}
+nav .navbar-brand .red
+{
+    /*color: #ea433b;*/
+    color: #c90016;
+    font-family: 'Merriweather Light', 'Times New Roman', serif;
+}
+nav .navbar-brand .yellow
+{
+    /*color: #f5b82e;*/
+    color: #c90016;
+    font-family: 'Merriweather Light', 'Times New Roman', serif;
+}
+nav .navbar-brand .green
+{
+    /*color: #2e944b;*/
+    color: #c90016;
+    font-family: 'Merriweather Light', 'Times New Roman', serif;
+}
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
+body {
+  padding: 20px 80px;
+  background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
+}
+#logo {
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 150px;
+  font-weight: 800;
+  letter-spacing: -3px;
+  line-height: 1;
+  text-shadow: #EDEDED 3px 2px 0;
+  position: relative;
+}
+/*#logo:after {*/
+/*  content:"First-Year Concentration Planner";*/
+/*  position: absolute;*/
+/*  left: 8px;*/
+/*  top: 32px;*/
+/*}*/
+/*#logo:after {*/
+  /*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*/
+/*  background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);*/
+/*  background-size: 4px 4px;*/
+/*  -webkit-background-clip: text;*/
+/*  -webkit-text-fill-color: transparent;*/
+/*  z-index: -5;*/
+/*  display: block;*/
+/*  text-shadow: none;*/
+/*}*/

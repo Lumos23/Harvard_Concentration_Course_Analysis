@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Results
+{% endblock %}
+
+{% block main %}
+ <main class="container p-5">
+
+    <h2>Check out what classes the person most similar to you took!</h2>
+    <h4>People who took your classes frequently took these:</h4>
+        {% for class in recommendation %}
+        <p>{{class}}</p>
+    {% endfor %}
+    <h3>Most similar profile(s)!</h3>
+            {% for i in range(length)%}
+            <h3>Student {{i+1}}</h3>
+            <p>
+                {% for class in profiles[i] %}
+                    {{class}}<br>
+                {% endfor %}
+            </p>
+            {% endfor %}
+        </tbody>
+</main>
+{% endblock %}
